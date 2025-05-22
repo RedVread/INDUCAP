@@ -17,11 +17,19 @@ $result = $conn->query("SELECT * FROM cotxes");
 
 if ($result->num_rows > 0) {
 
+    $cotxes = [];
+
     for ($i = 0; $i<$result->num_rows; $i++){
 
         $row = $result->fetch_assoc();
-        
-        echo "Fabricant = " . $row["fabricant"] . "<br/>";
+
+        $cotxes[] = [
+            "fabricant" => $row["fabricant"],
+            "model" => $row["model"],
+            "color" => $row["color"],
+            "any" => $row["any"],
+            "fotos" => $row["fotos"]
+        ];
 
     }
 }
