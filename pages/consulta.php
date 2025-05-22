@@ -77,30 +77,29 @@
           </div>
 
           <div class="grid grid-cols-4 gap-3 my-10">
-          <?php 
-              include '../PHP/loadAllCars.php'; 
+          
+          <form id="contact-form" class="w-full max-w-lg">
+            <div class="flex flex-wrap -mx-3 mb-6">
+                <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="Nom">
+                <p class="text-red-500 text-xs italic">Please fill out this field.</p>
+                </div>
+                <div class="w-full md:w-1/2 px-3">
+                <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="text" placeholder="Cognom">
+                </div>
+            </div>
+            <div class="w-full my-5">
+                <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="text" placeholder="Correu electrònic">
+            </div>
+            <div class="flex flex-wrap -mx-3 mb-6">
+                <div class="w-full px-3">
+                <textarea class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-password" type="password" placeholder="Escriviu aquí la vostra consulta"></textarea>
+                <!-- <p class="text-gray-600 text-xs italic">Make it as long and as crazy as you'd like</p> -->
+                </div>
+            </div>
+            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"> Envia </button>
+            </form>
 
-              foreach ($cotxes as $cotxe){
-
-                echo '
-                      <div class="max-w-sm rounded overflow-hidden shadow-lg" carid="' . $cotxe["id"] . '">
-                        <img class="w-full" src="' . $cotxe["fotos"] . '" alt="Mountain">
-                        <div class="px-6 py-4">
-                          <div class="font-bold text-xl mb-2">' . $cotxe["fabricant"] . ' ' . $cotxe["model"] . ' ' . $cotxe["any"] .'</div>
-                          <p class="text-gray-700 text-base">' .
-                            $cotxe["color"]
-                          .'</p>
-                        </div>
-                        <!-- <div class="px-6 pt-4 pb-2">
-                          <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
-                          <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
-                          <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
-                        </div> -->
-                      </div>';
-
-              }
-
-            ?>
           </div>
           
           <div class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]" aria-hidden="true">

@@ -24,6 +24,7 @@ if ($result->num_rows > 0) {
         $row = $result->fetch_assoc();
 
         $cotxes[] = [
+            "id" => $row["id"],
             "fabricant" => $row["fabricant"],
             "model" => $row["model"],
             "color" => $row["color"],
