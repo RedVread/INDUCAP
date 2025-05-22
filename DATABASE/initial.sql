@@ -14,6 +14,16 @@ CREATE TABLE cotxes (
   PRIMARY KEY (`id`)
 );
 
+CREATE TABLE furgonetes (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `fabricant` varchar(100) DEFAULT NULL,
+  `model` varchar(100) DEFAULT NULL,
+  `color` varchar(100) DEFAULT NULL,
+  `any` int DEFAULT NULL,
+  `fotos` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+);
+
 INSERT INTO cotxes
 (fabricant, model, color, `any`, fotos)
 VALUES("Audi", "A4", "Plata", 2003, "https://subastacar.com/coches-segunda-mano-ocasion/comprar-audi-a4_19_tdi_130_cv-sedan-manual-2003/67e3d5783c");
@@ -33,3 +43,25 @@ VALUES("BMW", "M3 E46", "Blau", 2000, "https://storagegohistorics.blob.core.wind
 INSERT INTO cotxes
 (fabricant, model, color, `any`, fotos)
 VALUES("Mitsubishi", "ASX", "Blanc", 2019, "https://procarautomotriz.cl/wp-content/uploads/2025/01/ASX-2019.jpg");
+
+
+INSERT INTO furgonetes
+(fabricant, model, color, `any`, fotos)
+VALUES("Volkswagen", "T3 California", "Blanc", 1989, "https://i.ytimg.com/vi/sLUj62NWMuw/maxresdefault.jpg");
+
+INSERT INTO furgonetes
+(fabricant, model, color, `any`, fotos)
+VALUES("Mercedes", "Vito", "Vermell", 1990, "https://www.mercedes-vegar.es/blog/wp-content/uploads/2020/11/25Vito_09-1920x1301.jpg");
+
+INSERT INTO furgonetes
+(fabricant, model, color, `any`, fotos)
+VALUES("Peugeot", "Partner", "Groc", 2003, "https://www.hostiauto.com/multimedia/elementos/1395/imgs/imagen_21488.jpg");
+
+INSERT INTO furgonetes
+(fabricant, model, color, `any`, fotos)
+VALUES("Ford", "Tourneo Connect", "Blanc", 2021, "https://www.romacarabs.com/wp-content/uploads/2021/01/ford-tourneo-connect-romacar-600x338.jpg");
+
+INSERT INTO furgonetes
+(fabricant, model, color, `any`, fotos)
+VALUES("Toyota", "Proace", "Blanc", 2015, "https://transporte3.com/wp-content/uploads/2023/08/apertura5282517b55a8a.webp");
+

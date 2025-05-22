@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <title>INCUAP | Cotxes clàssics a preus d'escàndol</title>
+    <title>INDUCAP | Cotxes clàssics a preus d'escàndol</title>
 </head>
 <body style="background-image: url('https://insite.ipwea.org/change-ahead-as-electric-vehicles-start-to-dominate-fleets/') !important;>
     <div class="bg-white">
@@ -12,10 +12,10 @@
           <nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
             <div class="flex lg:flex-1">
               <a href="#" class="-m-1.5 p-1.5">
-                <span class="sr-only">INCUAP</span>
+                <span class="sr-only">INDUCAP</span>
                 <div class="flex items-center justify-between">
                   <img class="h-8 w-auto" src="https://cdn-icons-png.freepik.com/512/5266/5266272.png" alt="">&nbsp;
-                  <h1>INCUAP</h1>
+                  <h1>INDUCAP</h1>
                 </div>
                 
               </a>

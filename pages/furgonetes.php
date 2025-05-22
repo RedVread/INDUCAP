@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <title>INCUAP | Cotxes clàssics a preus d'escàndol</title>
+    <link rel="icon" href="https://cdn-icons-png.freepik.com/512/5266/5266272.png" type="image/x-icon">
+    <title>INDUCAP | Cotxes clàssics a preus d'escàndol</title>
+    
 </head>
 <body>
 
@@ -13,8 +15,11 @@
           <nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
             <div class="flex lg:flex-1">
               <a href="#" class="-m-1.5 p-1.5">
-                <span class="sr-only">INCUAP</span>
-                <img class="h-8 w-auto" src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600" alt="">
+                <span class="sr-only">INDUCAP</span>
+                <div class="flex items-center justify-between">
+                  <img class="h-8 w-auto" src="https://cdn-icons-png.freepik.com/512/5266/5266272.png" alt="">&nbsp;
+                  <h1>INDUCAP</h1>
+                </div>
               </a>
             </div>
             <div class="flex lg:hidden">
@@ -26,8 +31,8 @@
               </button>
             </div>
             <div class="hidden lg:flex lg:gap-x-12">
-              <a href="#" class="text-sm/6 font-semibold text-blue-700">Cotxes</a>
-              <a href="#" class="text-sm/6 font-semibold text-gray-900">Furgonetes</a>
+              <a href="#" class="text-sm/6 font-semibold text-gray-900">Cotxes</a>
+              <a href="#" class="text-sm/6 font-semibold text-blue-700">Furgonetes</a>
               <a href="#" class="text-sm/6 font-semibold text-gray-900">Solicita un cotxe</a>
               <a href="#" class="text-sm/6 font-semibold text-gray-900">Porta'ns el teu cotxe</a>
             </div>
@@ -55,8 +60,8 @@
               <div class="mt-6 flow-root">
                 <div class="-my-6 divide-y divide-gray-500/10">
                   <div class="space-y-2 py-6">
-                    <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-blue-700 hover:bg-gray-50">Cotxes</a>
-                    <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Furgonetes</a>
+                    <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Cotxes</a>
+                    <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-blue-700 hover:bg-gray-50">Furgonetes</a>
                     <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Sol·licita un cotxe</a>
                     <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Porta'ns el teu cotxe</a>
                   </div>
@@ -78,7 +83,7 @@
 
           <div class="grid grid-cols-4 gap-3 my-10">
           <?php 
-              include '../PHP/loadAllCars.php'; 
+              include '../PHP/loadAllVans.php'; 
 
               foreach ($cotxes as $cotxe){
 

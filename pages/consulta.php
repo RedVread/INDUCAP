@@ -14,7 +14,10 @@
             <div class="flex lg:flex-1">
               <a href="#" class="-m-1.5 p-1.5">
                 <span class="sr-only">INCUAP</span>
-                <img class="h-8 w-auto" src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600" alt="">
+                <div class="flex items-center justify-between">
+                  <img class="h-8 w-auto" src="https://cdn-icons-png.freepik.com/512/5266/5266272.png" alt="">&nbsp;
+                  <h1>INDUCAP</h1>
+                </div>
               </a>
             </div>
             <div class="flex lg:hidden">
