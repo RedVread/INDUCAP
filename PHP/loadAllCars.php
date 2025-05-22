@@ -13,12 +13,15 @@ if (!$conn) {
     die("Failed connection to database: " . mysqli_connect_error());
 }
 
+// Get all the cars from DB
 $result = $conn->query("SELECT * FROM cotxes");
 
+// Check that there are results
 if ($result->num_rows > 0) {
 
     $cotxes = [];
 
+    // Store all cars in an array
     for ($i = 0; $i<$result->num_rows; $i++){
 
         $row = $result->fetch_assoc();
@@ -35,7 +38,7 @@ if ($result->num_rows > 0) {
     }
 }
 
-//Cerrar la conexión
+//Close connection
 mysqli_close($conn);
 
 ?>
