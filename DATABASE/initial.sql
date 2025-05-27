@@ -11,6 +11,8 @@ CREATE TABLE cotxes (
   `color` varchar(100) DEFAULT NULL,
   `any` int DEFAULT NULL,
   `fotos` varchar(255) DEFAULT NULL,
+  `descripcio` text,
+  `kms` int DEFAULT NULL,
   PRIMARY KEY (`id`)
 );
 
@@ -21,6 +23,8 @@ CREATE TABLE furgonetes (
   `color` varchar(100) DEFAULT NULL,
   `any` int DEFAULT NULL,
   `fotos` varchar(255) DEFAULT NULL,
+  `descripcio` text,
+  `kms` int DEFAULT NULL,
   PRIMARY KEY (`id`)
 );
 
