@@ -33,6 +33,8 @@ if ($result->num_rows > 0) {
             "color" => $row["color"],
             "any" => $row["any"],
             "fotos" => $row["fotos"]
+            "descripcio" => $row["descripcio"],
+            "preu" => $row["preu"]
         ];
 
     }

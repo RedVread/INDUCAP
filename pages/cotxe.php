@@ -104,7 +104,7 @@
 
         </div>
 
-        <div class="mx-10">
+        <div class="mx-15">
             <p><?=$cotxe["descripcio"]?></p>
         </div>
 

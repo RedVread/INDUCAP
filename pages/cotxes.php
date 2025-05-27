@@ -85,14 +85,18 @@
 
               foreach ($cotxes as $cotxe){
 
+
+                $link = "window.location.href='./cotxe.php?id=". $cotxe["id"] . "'";
+
                 echo '
-                      <div class="max-w-sm rounded overflow-hidden shadow-lg" carid="' . $cotxe["id"] . '">
-                        <img class="w-full" src="' . $cotxe["fotos"] . '" alt="Mountain">
+                      <div class="max-w-sm rounded overflow-hidden shadow-lg cursor-pointer" onclick="' . $link . '">
+                        <img class="w-full" src="' . $cotxe["fotos"] . '" alt="'. $cotxe["fabricant"] . ' ' . $cotxe["model"] .'">
                         <div class="px-6 py-4">
                           <div class="font-bold text-xl mb-2">' . $cotxe["fabricant"] . ' ' . $cotxe["model"] . ' ' . $cotxe["any"] .'</div>
                           <p class="text-gray-700 text-base">' .
-                            $cotxe["color"]
+                            $cotxe["descripcio"]
                           .'</p>
+                          <div class="font-bold text-xl mb-2 my-2">' . $cotxe["preu"] . '€' .'</div>
                         </div>
                         <!-- <div class="px-6 pt-4 pb-2">
                           <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
