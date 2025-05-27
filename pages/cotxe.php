@@ -80,6 +80,8 @@
                 </div>
             
                 <?php 
+
+                header("Content-Type: text/html; charset=UTF-8");
                 
                 (isset($_GET["id"])) && $carId = $_GET["id"];
 
@@ -100,6 +102,8 @@
                 <h5 class="mb-2 mt-0 text-xl font-medium leading-tight text-primary">Any: <?=$cotxe["any"]?></h5>
                 <h5 class="mb-2 mt-0 text-xl font-medium leading-tight text-primary">Color: <?=$cotxe["color"]?></h5>
                 <h5 class="mb-2 mt-0 text-xl font-medium leading-tight text-primary">Kilòmetres: <?=$cotxe["kms"] . 'km'?></h5>
+                <h5 class="mb-2 mt-0 text-xl font-medium leading-tight text-primary">Preu: <?=$cotxe["preu"] . '€'?></h5>
+
             </div>
 
         </div>

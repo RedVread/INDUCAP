@@ -7,6 +7,7 @@ $database = "incuap-cotxes";
 
 // Create a connection
 $conn = mysqli_connect($host, $user, $password, $database);
+$conn->set_charset("utf8mb4");
 
 // Check the connection
 if (!$conn) {
@@ -33,7 +34,8 @@ if ($result->num_rows > 0) {
         "any" => $row["any"],
         "fotos" => $row["fotos"],
         "descripcio" => $row["descripcio"],
-        "kms" => $row["kms"]
+        "kms" => $row["kms"],
+        "preu" => $row["preu"],
     ];
 
 }

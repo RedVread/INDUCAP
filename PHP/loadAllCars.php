@@ -7,6 +7,8 @@ $database = "incuap-cotxes";
 
 // Create a connection
 $conn = mysqli_connect($host, $user, $password, $database);
+$conn->set_charset("utf8mb4");
+
 
 // Check the connection
 if (!$conn) {
