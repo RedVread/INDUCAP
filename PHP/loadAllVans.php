@@ -34,7 +34,7 @@ if ($result->num_rows > 0) {
             "model" => $row["model"],
             "color" => $row["color"],
             "any" => $row["any"],
-            "fotos" => $row["fotos"]
+            "fotos" => $row["fotos"],
             "descripcio" => $row["descripcio"],
             "preu" => $row["preu"]
         ];

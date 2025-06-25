@@ -39,7 +39,6 @@ if ($result->num_rows > 0) {
             "preu" => $row["preu"]
         ];
 
-
     }
 }
 
