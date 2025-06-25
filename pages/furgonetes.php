@@ -85,15 +85,15 @@
           <?php 
               include '../PHP/loadAllVans.php'; 
 
-              foreach ($cotxes as $cotxe){
+              foreach ($furgos as $furgo){
 
                 echo '
-                      <div class="max-w-sm rounded overflow-hidden shadow-lg" carid="' . $cotxe["id"] . '">
-                        <img class="w-full" src="' . $cotxe["fotos"] . '" alt="Mountain">
+                      <div class="max-w-sm rounded overflow-hidden shadow-lg" carid="' . $furgo["id"] . '">
+                        <img class="w-full" src="' . $furgo["fotos"] . '" alt="Mountain">
                         <div class="px-6 py-4">
-                          <div class="font-bold text-xl mb-2">' . $cotxe["fabricant"] . ' ' . $cotxe["model"] . ' ' . $cotxe["any"] .'</div>
+                          <div class="font-bold text-xl mb-2">' . $furgo["fabricant"] . ' ' . $furgo["model"] . ' ' . $furgo["any"] .'</div>
                           <p class="text-gray-700 text-base">' .
-                            $cotxe["color"]
+                            $furgo["color"]
                           .'</p>
                         </div>
                         <!-- <div class="px-6 pt-4 pb-2">

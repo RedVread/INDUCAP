@@ -21,14 +21,14 @@ $result = $conn->query("SELECT * FROM furgonetes");
 // Check that there are results
 if ($result->num_rows > 0) {
 
-    $cotxes = [];
+    $furgos = [];
 
     // Store all cars in an array
     for ($i = 0; $i<$result->num_rows; $i++){
 
         $row = $result->fetch_assoc();
 
-        $cotxes[] = [
+        $furgos[] = [
             "id" => $row["id"],
             "fabricant" => $row["fabricant"],
             "model" => $row["model"],
