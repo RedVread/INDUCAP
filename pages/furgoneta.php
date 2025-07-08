@@ -18,7 +18,7 @@
     </div>
             
     <?php 
-    
+     
     (isset($_GET["id"])) && $vanId = $_GET["id"];
 
     include '../PHP/loadSingleVan.php';
