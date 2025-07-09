@@ -23,6 +23,7 @@ CREATE TABLE vehicles (
   `equipment` JSON DEFAULT NULL,
   `pics` JSON DEFAULT NULL,
   `description` text DEFAULT NULL,
+  `type` varchar(100) DEFAULT NULL,
   `price` float DEFAULT NULL,
   PRIMARY KEY (`id`)
 );
