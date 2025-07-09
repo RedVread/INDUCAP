@@ -23,9 +23,9 @@
 
           header("Content-Type: text/html; charset=UTF-8");
           
-          (isset($_GET["id"])) && $carId = $_GET["id"];
+          (isset($_GET["id"])) && $vehicleId = $_GET["id"];
 
-          include '../PHP/loadSingleCar.php';
+          include '../PHP/loadSingleVehicle.php';
 
           ?>
 
@@ -34,21 +34,21 @@
 
           <div class="flex flex-row my-15">
               <div class="basis-1/3 mx-10">
-                  <img src="<?= $cotxe['fotos']?>" alt="">
+                  <img src="<?= $vehicle['pics']?>" alt="">
               </div>
               <div class="basis-2/3">
-                  <h3 class="mb-2 mt-0 text-3xl font-medium leading-tight text-primary"><?=$cotxe["fabricant"] .' '. $cotxe['model']?></h3>
-                  <h5 class="mb-2 mt-0 text-xl font-medium leading-tight text-primary">Any: <?=$cotxe["any"]?></h5>
-                  <h5 class="mb-2 mt-0 text-xl font-medium leading-tight text-primary">Color: <?=$cotxe["color"]?></h5>
-                  <h5 class="mb-2 mt-0 text-xl font-medium leading-tight text-primary">Kilòmetres: <?=$cotxe["kms"] . 'km'?></h5>
-                  <h5 class="mb-2 mt-0 text-xl font-medium leading-tight text-primary">Preu: <?=$cotxe["preu"] . '€'?></h5>
+                  <h3 class="mb-2 mt-0 text-3xl font-medium leading-tight text-primary"><?=$vehicle["make"] .' '. $vehicle['model']?></h3>
+                  <h5 class="mb-2 mt-0 text-xl font-medium leading-tight text-primary">Any: <?=$vehicle["year"]?></h5>
+                  <h5 class="mb-2 mt-0 text-xl font-medium leading-tight text-primary">Color: <?=$vehicle["color"]?></h5>
+                  <h5 class="mb-2 mt-0 text-xl font-medium leading-tight text-primary">Kilòmetres: <?=$vehicle["kms"] . 'km'?></h5>
+                  <h5 class="mb-2 mt-0 text-xl font-medium leading-tight text-primary">Preu: <?=$vehicle["price"] . '€'?></h5>
 
               </div>
 
           </div>
 
           <div class="mx-15">
-              <p><?=$cotxe["descripcio"]?></p>
+              <p><?=$vehicle["description"]?></p>
           </div>
 
       </div>

@@ -14,7 +14,7 @@ if (!$conn) {
     die("Failed connection to database: " . mysqli_connect_error());
 }
 
-$query = "SELECT * FROM cotxes WHERE id=" . $carId;
+$query = "SELECT * FROM vehicles WHERE id=" . $vehicleId;
 
 // Get all the cars from DB
 $result = $conn->query($query);
@@ -26,16 +26,25 @@ if ($result->num_rows > 0) {
 
     $row = $result->fetch_assoc();
 
-    $cotxe = [
+    $vehicle = [
         "id" => $row["id"],
-        "fabricant" => $row["fabricant"],
+        "make" => $row["make"],
         "model" => $row["model"],
         "color" => $row["color"],
-        "any" => $row["any"],
-        "fotos" => $row["fotos"],
-        "descripcio" => $row["descripcio"],
+        "year" => $row["year"],
         "kms" => $row["kms"],
-        "preu" => $row["preu"],
+        "numPlate" => $row["numPlate"],
+        "fuel" => $row["fuel"],
+        "doors" => $row["doors"],
+        "numPlateDate" => $row["numPlateDate"],
+        "transmission" => $row["transmission"],
+        "displacement" => $row["displacement"],
+        "hp" => $row["hp"],
+        "guarantee" => $row["guarantee"],
+        "equipment" => $row["equipment"],
+        "pics" => str_replace(['[', ']', '"'], '', $row["pics"]),
+        "description" => $row["description"],
+        "price" => $row["price"]
     ];
 
 }

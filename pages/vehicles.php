@@ -12,7 +12,6 @@
       
     <?php include "../PHP/header.php"; ?>
 
-
         <div class="relative isolate px-6 pt-14 lg:px-8">
 
 
@@ -23,21 +22,21 @@
           <div class="grid grid-cols-4 gap-20 my-10">
 
           <?php 
-              include '../PHP/loadAllCars.php'; 
+              include '../PHP/loadAllVehicles.php'; 
 
-              foreach ($cotxes as $cotxe){
+              foreach ($vehicles as $vehicle){
 
-                $link = "window.location.href='./cotxe.php?id=". $cotxe["id"] . "'";
+                $link = "window.location.href='./vehicle.php?id=". $vehicle["id"] . "'";
 
                 echo '
                       <div class="max-w-sm rounded overflow-hidden shadow-lg cursor-pointer" onclick="' . $link . '">
-                        <img class="w-full" src="' . $cotxe["fotos"] . '" alt="'. $cotxe["fabricant"] . ' ' . $cotxe["model"] .'">
+                        <img class="w-full" src="' . $vehicle["pics"] . '" alt="'. $vehicle["make"] . ' ' . $vehicle["model"] .'">
                         <div class="px-6 py-4">
-                          <div class="font-bold text-xl mb-2">' . $cotxe["fabricant"] . ' ' . $cotxe["model"] . ' ' . $cotxe["any"] .'</div>
+                          <div class="font-bold text-xl mb-2">' . $vehicle["make"] . ' ' . $vehicle["model"] . ' ' . $vehicle["year"] .'</div>
                           <p class="text-gray-700 text-base">' .
-                            $cotxe["descripcio"]
+                            $vehicle["description"]
                           .'</p>
-                          <div class="font-bold text-xl mb-2 my-2">' . $cotxe["preu"] . '€' .'</div>
+                          <div class="font-bold text-xl mb-2 my-2">' . $vehicle["price"] . '€' .'</div>
                         </div>
                         <!-- <div class="px-6 pt-4 pb-2">
                           <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
